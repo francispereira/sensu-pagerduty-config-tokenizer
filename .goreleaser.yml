@@ -10,10 +10,8 @@ builds:
     goos:
       - darwin
       - linux
-      - windows
     goarch:
       - amd64
-      - 386
       - arm
       - arm64
     goarm:
@@ -28,8 +26,6 @@ builds:
       - linux_arm_6
       - linux_arm_7
       - linux_arm64
-      - windows_386
-      - windows_amd64
 
 checksum:
   name_template: "{{ .ProjectName }}_{{ .Version }}_sha512-checksums.txt"
@@ -40,5 +36,3 @@ archives:
     format: tar.gz
     files:
       - LICENSE
-      - README.md
-      - CHANGELOG.md
